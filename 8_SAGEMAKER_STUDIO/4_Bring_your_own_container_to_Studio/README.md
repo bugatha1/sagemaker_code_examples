@@ -7,3 +7,10 @@ Unlike SageMaker notebook instances, in SageMaker studio, you will not need the 
 
 The SageMaker Studio Image Build CLI uses Amazon Elastic Container Registry and AWS CodeBuild so we need to ensure that the role we provide as input to our CLI commands has the necessary policies and permissions attached.
 
+![image](https://user-images.githubusercontent.com/63837999/212499305-10ba315b-5db0-40b0-8300-dde0a7c3fe35.png)
+
+Exception 1 : botocore.exceptions.ClientError: An error occurred (AccessDeniedException) when calling the CreateProject operation: User: user is not authorized to perform: codebuild:CreateProject on resource: role because no identity-based policy allows the codebuild:CreateProject action
+
+
+ 
+ 

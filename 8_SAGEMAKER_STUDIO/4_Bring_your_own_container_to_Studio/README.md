@@ -11,6 +11,18 @@ The SageMaker Studio Image Build CLI uses Amazon Elastic Container Registry and 
 
 Exception 1 : botocore.exceptions.ClientError: An error occurred (AccessDeniedException) when calling the CreateProject operation: User: user is not authorized to perform: codebuild:CreateProject on resource: role because no identity-based policy allows the codebuild:CreateProject action
 
+To resolve the above exception need to do 2 things.
+1. udpate trust policy with codebuild
+2. Attach some new permissions to executin role
+
+refer "Ensure the role that will be used has the following" section in below link 
+
+https://sagemaker-examples.readthedocs.io/en/latest/aws_sagemaker_studio/sagemaker_studio_image_build/xgboost_bring_your_own/Batch_Transform_BYO_XGB.html
+
+
+![image](https://user-images.githubusercontent.com/63837999/212509464-13f63d97-5757-4405-86cb-6b0a548b5b45.png)
+
+
 
  
  
